@@ -31,7 +31,23 @@ API key in the configuration to enable unlimited extraction and cloud upload.
 ## Download
 
 <!-- latest-release:start -->
-The first public release is being published.
+**Version:** `v20261119.1621`
+**Published (UTC):** 2026-11-19 16:25:15 UTC
+
+| File | SHA256 | Download |
+| --- | --- | --- |
+| Windows installer | `cc93bf62353a7bbee05fd3b3732194e7c71b3efe423f11af4574980dc6fa9c1d` | [Download](https://github.com/datalakehouse/dlh-agent-aloha-pos-installer/releases/download/v20261119.1621/dlh-agent-for-aloha-pos-installer-v20261119.1621.exe) |
+| PowerShell bootstrap | `c6c961f2fc709e7afb1121f6951d809f494f33dbe36c4de0cf50e624c64a3d1a` | [Download](https://github.com/datalakehouse/dlh-agent-aloha-pos-installer/releases/download/v20261119.1621/Install-DlhAgentAlohaPos.ps1) |
+| Setup guide PDF | `786794b3f484d702eb21141fabf0752cc06b5c94f59ea540789a84d558b71985` | [Download](DLH-Aloha-POS-Agent-Setup-Guide.pdf) |
+
+### Quick install
+
+```powershell
+$tag = 'v20261119.1621'
+$base = "https://github.com/datalakehouse/dlh-agent-aloha-pos-installer/releases/download/$tag"
+Invoke-WebRequest "$base/Install-DlhAgentAlohaPos.ps1" -OutFile .\Install-DlhAgentAlohaPos.ps1
+.\Install-DlhAgentAlohaPos.ps1 -InstallerUrl "$base/dlh-agent-for-aloha-pos-installer-$tag.exe" -ExpectedSha256 'cc93bf62353a7bbee05fd3b3732194e7c71b3efe423f11af4574980dc6fa9c1d'
+```
 <!-- latest-release:end -->
 
 Browse all files on the [Releases page](https://github.com/datalakehouse/dlh-agent-aloha-pos-installer/releases)

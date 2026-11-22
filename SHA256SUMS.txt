@@ -1,0 +1,2 @@
+cc93bf62353a7bbee05fd3b3732194e7c71b3efe423f11af4574980dc6fa9c1d  dlh-agent-for-aloha-pos-installer-v20261119.1621.exe
+c6c961f2fc709e7afb1121f6951d809f494f33dbe36c4de0cf50e624c64a3d1a  Install-DlhAgentAlohaPos.ps1
